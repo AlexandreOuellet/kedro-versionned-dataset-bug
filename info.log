@@ -1,0 +1,36 @@
+2023-06-15 14:47:05,365 - kedro.framework.session.session - INFO - Kedro project iris
+2023-06-15 14:47:05,633 - kedro.io.data_catalog - INFO - Loading data from 'parameters' (MemoryDataSet)...
+2023-06-15 14:47:05,634 - kedro.pipeline.node - INFO - Running node: A: A([parameters]) -> [versionned_dataset]
+2023-06-15 14:47:06,637 - kedro.pipeline.node - ERROR - Node 'A: A([parameters]) -> [versionned_dataset]' failed with error: 
+name 'np' is not defined
+2023-06-15 14:47:06,638 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2023-06-15 14:47:18,758 - kedro.framework.session.session - INFO - Kedro project iris
+2023-06-15 14:47:19,024 - kedro.io.data_catalog - INFO - Loading data from 'parameters' (MemoryDataSet)...
+2023-06-15 14:47:19,025 - kedro.pipeline.node - INFO - Running node: A: A([parameters]) -> [versionned_dataset]
+2023-06-15 14:47:20,038 - kedro.io.data_catalog - INFO - Saving data to 'versionned_dataset' (MemoryDataSet)...
+2023-06-15 14:47:20,043 - kedro.runner.sequential_runner - INFO - Completed 1 out of 2 tasks
+2023-06-15 14:47:20,044 - kedro.io.data_catalog - INFO - Loading data from 'versionned_dataset' (MemoryDataSet)...
+2023-06-15 14:47:20,051 - kedro.pipeline.node - INFO - Running node: B: B([versionned_dataset]) -> None
+2023-06-15 14:47:20,059 - kedro.runner.sequential_runner - INFO - Completed 2 out of 2 tasks
+2023-06-15 14:47:20,060 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2023-06-15 14:48:33,982 - kedro.framework.session.session - INFO - Kedro project iris
+2023-06-15 14:48:34,289 - kedro.io.data_catalog - INFO - Loading data from 'parameters' (MemoryDataSet)...
+2023-06-15 14:48:34,291 - kedro.pipeline.node - INFO - Running node: A: A([parameters]) -> [versionned_dataset]
+2023-06-15 14:48:37,932 - kedro.framework.session.session - INFO - Kedro project iris
+2023-06-15 14:48:38,202 - kedro.io.data_catalog - INFO - Loading data from 'parameters' (MemoryDataSet)...
+2023-06-15 14:48:38,203 - kedro.pipeline.node - INFO - Running node: A: A([parameters]) -> [versionned_dataset]
+2023-06-15 14:48:39,215 - kedro.io.data_catalog - INFO - Saving data to 'versionned_dataset' (CSVDataSet)...
+2023-06-15 14:48:39,221 - kedro.runner.sequential_runner - INFO - Completed 1 out of 2 tasks
+2023-06-15 14:48:39,222 - kedro.io.data_catalog - INFO - Loading data from 'versionned_dataset' (CSVDataSet)...
+2023-06-15 14:48:39,233 - kedro.pipeline.node - INFO - Running node: B: B([versionned_dataset]) -> None
+2023-06-15 14:48:39,241 - kedro.runner.sequential_runner - INFO - Completed 2 out of 2 tasks
+2023-06-15 14:48:39,243 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2023-06-15 14:48:44,308 - kedro.io.data_catalog - INFO - Saving data to 'versionned_dataset' (CSVDataSet)...
+2023-06-15 14:48:44,311 - py.warnings - WARNING - /home/vscode/.local/lib/python3.10/site-packages/kedro/io/core.py:632: UserWarning: Save version '2023-06-15T14.48.33.972Z' did not match load version '2023-06-15T14.48.37.923Z' for CSVDataSet(filepath=/workspaces/iris/data/01_raw/versionned_dataset.csv, load_args={}, protocol=file, save_args={'index': False}, version=Version(load=None, save='2023-06-15T14.48.33.972Z')). This is strongly discouraged due to inconsistencies it may cause between 'save' and 'load' operations. Please refrain from setting exact load version for intermediate data sets where possible to avoid this warning.
+  warnings.warn(
+
+2023-06-15 14:48:44,320 - kedro.runner.sequential_runner - INFO - Completed 1 out of 2 tasks
+2023-06-15 14:48:44,321 - kedro.io.data_catalog - INFO - Loading data from 'versionned_dataset' (CSVDataSet)...
+2023-06-15 14:48:44,329 - kedro.pipeline.node - INFO - Running node: B: B([versionned_dataset]) -> None
+2023-06-15 14:48:44,336 - kedro.runner.sequential_runner - INFO - Completed 2 out of 2 tasks
+2023-06-15 14:48:44,337 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
